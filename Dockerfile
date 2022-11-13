@@ -1,10 +1,6 @@
 # 基础镜像
 FROM a76yyyy/pycurl:latest
 
-# 维护者信息
-LABEL maintainer "a76yyyy <q981331502@163.com>"
-LABEL org.opencontainers.image.source=https://github.com/qiandao-today/qiandao
-
 # 签到版本 20220203
 # 集成皮蛋0.1.1  https://github.com/cdpidan/qiandaor
 # 加入蓝调主题 20190118 https://www.quchao.net/QianDao-Theme.html
@@ -69,6 +65,6 @@ EXPOSE $PORT/tcp
 ENV TZ=CST-8
 
 # 添加挂载点
-VOLUME ["/usr/src/app/config"]
+#VOLUME ["/usr/src/app/config"]
 
-CMD ["sh","-c","python /usr/src/app/run.py"]
+#CMD ["sh","-c","python /usr/src/app/run.py"]
